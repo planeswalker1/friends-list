@@ -8,10 +8,10 @@
       </li>
       <% }); %>
   </ul>
-  <form>
+  <form action="/addfriend" method="POST">
     <div class="form-group">
       <label for="friend">Friend: </label>
-      <input id="friend" type="text" placeholder="Friend Name">
+      <input id="friend" type="text" name="friendName" placeholder="Friend Name">
     </div>
     <button>Add friend</button>
   </form>
