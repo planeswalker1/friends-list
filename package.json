@@ -1,0 +1,25 @@
+{
+  "name": "friends-list",
+  "version": "1.0.0",
+  "description": "A website to add friends to a list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planeswalker1/friends-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/planeswalker1/friends-list/issues"
+  },
+  "homepage": "https://github.com/planeswalker1/friends-list#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
