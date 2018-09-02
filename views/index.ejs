@@ -1,19 +1,18 @@
 <% include partials/header.ejs %>
 
-  <h1>Friends list</h1>
-  <ul>
-    <% friends.forEach(function (friend) { %>
-      <li>
-        <%= friend %>
-      </li>
-      <% }); %>
-  </ul>
-  <form action="/addfriend" method="POST">
-    <div class="form-group">
-      <label for="friend">Friend: </label>
-      <input id="friend" type="text" name="friendName" placeholder="Friend Name">
-    </div>
-    <button>Add friend</button>
-  </form>
+<h1>Friends list</h1>
+<ul>
+  <% friends.forEach(function (friend) { %>
+    <li><%= friend %></li>
+  <% }); %>
+</ul>
 
-  <% include partials/footer.ejs %>
+<form action="/addfriend" method="POST">
+  <div class="form-group">
+    <label for="friend">Friend: </label>
+    <input id="friend" type="text" name="friendName" placeholder="Friend Name">
+  </div>
+  <button type="submit">Add friend</button>
+</form>
+
+<% include partials/footer.ejs %>
